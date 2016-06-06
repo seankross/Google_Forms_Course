@@ -1,0 +1,25 @@
+- Class: meta
+  Course: Google Forms Course
+  Lesson: Lesson 1
+  Author: Sean Kross
+  Type: Standard
+  Organization: The Johns Hopkins Data Science Lab
+  Version: 2.4.1
+  
+- Class: text
+  Output: This short lesson is an example of how students can submit their
+    swirl lesson progress using Google Forms.
+
+- Class: cmd_question
+  Output: Enter 2 + 2.
+  CorrectAnswer: 2 + 2
+  AnswerTests: omnitest(correctExpr='2 + 2')
+  Hint: Just enter 2 + 2.
+
+- Class: mult_question
+  Output: Would you like to submit the log of this lesson to Google Forms so
+    that your instructor may evaluate your progress?
+  AnswerChoices: Yes;No
+  CorrectAnswer: NULL
+  AnswerTests: submit_log()
+  Hint: hint
