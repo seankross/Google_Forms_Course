@@ -38,7 +38,7 @@ submit_log <- function(){
   temp <- tempfile()
   log_ <- getLog()
   nrow_ <- max(unlist(lapply(log_, length)))
-  log_tbl <- data.frame(user = p(log_$user, nrow_, NA),
+  log_tbl <- data.frame(user = rep(log_$user, nrow_),
                         course_name = rep(log_$course_name, nrow_),
                         lesson_name = rep(log_$lesson_name, nrow_),
                         question_number = p(log_$question_number, nrow_, NA),
