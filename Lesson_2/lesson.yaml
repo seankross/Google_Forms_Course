@@ -1,0 +1,18 @@
+- Class: meta
+  Course: Google Forms Course
+  Lesson: Lesson 2
+  Author: Sean Kross
+  Type: Standard
+  Organization: The Fred Hutch Data Science Lab
+  Version: 2.4.1
+  
+- Class: text
+  Output: This short lesson is an example of how different choices in a
+    multiple choice question can trigger different results.
+
+- Class: mult_question
+  Output: Which website would you like to navigate to?
+  AnswerChoices: lego.com;disney.com;nytimes.com;wsj.com
+  CorrectAnswer: NULL
+  AnswerTests: submit_log()
+  Hint: hint
